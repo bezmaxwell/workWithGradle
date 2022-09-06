@@ -1,0 +1,96 @@
+import java.text.*
+
+SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss'Z'")
+sdf.setTimeZone(TimeZone.getTimeZone("UTC"))
+ 
+println "Hello World now: " + sdf.format(new Date())
+
+void sayHelloWorld(){
+	println("Hello my friend, for everyone !!!")
+}
+
+sayHelloWorld()
+
+
+int doubleIt(int i) {
+	println(i)
+	i * 3
+}
+
+println doubleIt(2)
+
+def doubleItDef(int i) {
+	println(i)
+	i * 3
+	def y = i
+}
+
+println doubleItDef(3)
+
+Integer doubleItInteger(Integer i) {
+	println(i)
+	i * 3
+	Integer y = i
+}
+
+println doubleItInteger(4)
+
+
+def differentString1 = "a string"
+println differentString1
+
+def differentString2 = 'a string'
+println differentString2
+
+def differentString3 = """ 
+A
+	string 
+	in
+	mutiple
+lines.	
+"""
+
+println differentString3
+
+// String Interpolation
+def x = 42341234132
+println "x is $x"	
+
+def myCourse = 	"GrAdLe"
+println "I'm training in: ${myCourse.toUpperCase()}"
+println "I'm training in: ${myCourse.toLowerCase()}"
+
+
+class Person {
+	String name
+	Integer age
+	
+	Person(name,age) {
+		this.name = name
+		this.age = age
+	}
+}
+	
+def person1 = new Person("Fred", 35)
+println person1.age	
+
+// Overrite AGE
+person1.age = 36
+println person1.age		
+
+// with map 
+Map firstHashMap = new HashMap()
+
+firstHashMap.put("foo", "Fred")
+println firstHashMap.get("foo")
+
+firstHashMap.foo = "Bill"
+firstHashMap.bar = "Jane"
+firstHashMap.baz = "Dave"
+
+println firstHashMap.foo
+println firstHashMap.bar
+println firstHashMap.baz
+
+
+//Stop for now Introdution to Groovy Closures
