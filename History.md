@@ -1,2 +1,5 @@
 # Added new gradle code
-    -Work with gradle
+    - Created Colaborators.md (Fault)
+    - Updated Readme.md
+    - Work with gradle
+    
